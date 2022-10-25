@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <select name="route" id="route" onchange="dirSelect()">
+        <option value="из A в B">из A в B</option>
+        <option value="из B в A">из B в A</option>
+        <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+    </select>
+    <br>
+    <br>
+    <label for="time">Выберите время</label>
+    <select name="time" id="time" onchange="ticketA()">
+        <option value="18:00(из A в B)">18:00(из A в B)</option>
+        <option value="18:30(из A в B)">18:30(из A в B)</option>
+        <option value="18:45(из A в B)">18:45(из A в B)</option>
+        <option value="19:00(из A в B)">19:00(из A в B)</option>
+        <option value="19:15(из A в B)">19:15(из A в B)</option>
+        <option value="21:00(из A в B)">21:00(из A в B)</option>
+    </select>
+    <span>   </span>
+    <select name="time-back" id="time-back" onchange="ticketB()">
+        <option value="18:30(из B в A)">18:30(из B в A)</option>
+        <option value="18:45(из B в A)">18:45(из B в A)</option>
+        <option value="19:00(из B в A)">19:00(из B в A)</option>
+        <option value="19:15(из B в A)">19:15(из B в A)</option>
+        <option value="19:35(из B в A)">19:35(из B в A)</option>
+        <option value="21:50(из B в A)">21:50(из B в A)</option>
+        <option value="21:55(из B в A)">21:55(из B в A)</option>
+    </select>
+    <br>
+    <br>
+    <label for="num">Количество билетов</label>
+    <input id="num">
+    <button onclick="result()">Посчитать</button>
+</body>
+
+</html>
