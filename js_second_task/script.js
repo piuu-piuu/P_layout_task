@@ -8,8 +8,10 @@ function intoMinutes(hourMinute) {
     return Number(parsed[0]) * 60 + Number(parsed[1]);
 }
 
-function intoHours(minutes) {
-
+function toHoursAndMinutes(totalMinutes) {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    return hours + ':' + minutes;
 }
 
 function dirSelect() {
@@ -42,16 +44,21 @@ function ticketB() {
 }
 
 function result() {
-
+    let totaltime = 0;
     if ((timeB != null) && (intoMinutes(timeA) + 50 > intoMinutes(timeB))) {
         window.alert("Обратный билет выбран на слишком раннее время");
         return
     }
+    if ((timeA != null) && (timeB != null)) {
+        sum = 1200;
+        totaltime = intoMinutes(timeB) - intoMinutes(timeA) + 50;
 
-    if ((timeA != null) && (timeB != null)) { sum = 1200 } else { sum = 700 }
+    } else {
+        sum = 700;
+        totaltime = 50;
+    }
     count = document.getElementById('num').value;
     sum = sum * count;
-    window.alert("Общая стоимость билетов в заказе " + sum);
+    window.alert("Общая стоимость билетов в заказе " + sum + ". Время в пути " + toHoursAndMinutes(totaltime));
     document.getElementById('num').value = 0;
-
 }
