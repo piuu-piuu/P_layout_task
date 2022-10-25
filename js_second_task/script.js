@@ -1,3 +1,15 @@
+// При клике на кнопку "Посчитать" показать результат с направлением, временем в пути, временем отправления и временем прибытия в часовом поясе пользователя.
+
+// Например:
+
+// Вы выбрали 4 билета по маршруту из A в B стоимостью 4000р.
+// Это путешествие займет у вас 40 минут. 
+// Теплоход отправляется в 12-00, а прибудет в 18-00.
+
+// таблица времени - GMT+3
+// 
+
+
 var route_dir = "из A в B";
 var timeA = "18:00";
 var timeB = null;
@@ -59,6 +71,8 @@ function result() {
     }
     count = document.getElementById('num').value;
     sum = sum * count;
-    window.alert("Общая стоимость билетов в заказе " + sum + ". Время в пути " + toHoursAndMinutes(totaltime));
+    const d = new Date();
+    const msk_offset = -(d.getTimezoneOffset() / 60 + 3);
+    window.alert("Общая стоимость билетов в заказе " + sum + ". Время в пути " + toHoursAndMinutes(totaltime) + ' мск+' + msk_offset);
     document.getElementById('num').value = 0;
 }
