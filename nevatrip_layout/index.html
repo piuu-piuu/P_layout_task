@@ -1,0 +1,67 @@
+<!-- 
+    шрифты, флаг новинка, номер на картинке
+
+    JS: 1.1 is_preferential  is_group
+        1.2 barcode_checked_count (исходно 0) 
+
+        2.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="count_buttons()">
+
+    <div class="main-container">
+        <div class="trip-card">
+            <div class="image-container">
+                <img class="card-image" src="img/sankt-peterburg-piter-st-3495.png" alt="Виды Санкт-Петербурга">
+            </div>
+            <div class="info-container">
+                <div class="duration">
+                    <img class="clock-img" src="img/clock.svg" alt="clock">
+                    <p class="duration-label">2 часа</p>
+                </div>
+                <div class="trip-title">
+                    <p>АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2019</p>
+                </div>
+                <div class="option-list">
+                    <ul style="list-style-image: url(img/bullet.svg)">
+                        <li>Билет на целый день</li>
+                        <li>Неограниченное число катаний</li>
+                        <li>6 остановок у главных достопримечательностей</li>
+                        <li>Ближайший рейс сегодня</li>
+                    </ul>
+                </div>
+                <div class="time-table">
+                    <div class="time-button">12:00</div>
+                    <div class="time-button">12:00</div>
+                    <div class="time-button">12:00</div>
+                    <div class="time-button">12:00</div>
+                    <div class="time-button">12:00</div>
+                    <div class="time-button">12:00</div>
+                    <div class="time-button last-timebutton" onclick="show_buttons()">12:00</div>
+                </div>
+                <div class="footer">
+                    <div class="footer-info">
+                        <p class="total-early">900 ₽</p>
+                        <p class="total-late">1200 р на причале</p>
+                    </div>
+                    <div class="footer-button">
+                        <p class=button-label>Подробнее</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

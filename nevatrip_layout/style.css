@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    margin: 4vw;
+}
+
+.trip-card {
+    box-sizing: border-box;
+    border: 0.3px solid #828282;
+    border-radius: 6vw;
+}
+
+.card-image {
+    border-radius: 6vw 6vw 0px 0px;
+    width: 100%;
+}
+
+.duration {
+    display: flex;
+    padding: 3vw;
+}
+
+.clock-img {
+    margin: 0 3vw 0 0;
+}
+
+.trip-title {
+    padding: 1vw 2vw 4vw 3vw;
+}
+
+li {
+    margin: 2vw 0 0 0;
+}
+
+.option-list {
+    margin: 0 0 0 9vw;
+}
+
+.time-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw 2vw 2vw 6vw;
+}
+
+.time-button {
+    text-align: center;
+    width: 15vw;
+    height: 5vw;
+    margin: 3vw 0 0 3vw;
+    background: #d9e8ff;
+    border-radius: 11px;
+    font-size: 4vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-info {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3vw;
+    margin: 0 0 3vw 0;
+}
+
+.total-early {
+    font-size: 8vw;
+}
+
+.total-late {
+    font-size: 2.3vw;
+    /* display: none; */
+}
+
+.footer-button {
+    width: 40vw;
+    height: 12vw;
+    background: #fed74b;
+    border: 0.5px solid #cba500;
+    border-radius: 12vw;
+    margin: 3vw 0 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button-label {
+    margin: 3vw 0 0 0;
+    font-size: 4.5vw;
+}
