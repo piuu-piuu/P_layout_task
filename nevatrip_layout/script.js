@@ -15,9 +15,4 @@ function show_buttons() {
     let buttons = document.querySelectorAll('.time-button');
     buttons.forEach((b, i) => { b.style.display = "block" })
     buttons[buttons.length - 1].style.display = "none";
-    // if (x.style.display === "none") {
-    //     x.style.display = "block";
-    // } else {
-    //     x.style.display = "none";
-    // }
 }
